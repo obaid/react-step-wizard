@@ -205,7 +205,7 @@ export default class StepWizard extends PureComponent {
         return (
             <div className={this.props.className}>
                 {this.props.nav && React.cloneElement(this.props.nav, props)}
-                <div className={styles['step-wrapper']}>
+                <div className={`wizard-step ${styles['step-wrapper']}`}>
                     {childrenWithProps}
                 </div>
             </div>
